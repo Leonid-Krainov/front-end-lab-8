@@ -73,6 +73,10 @@ body input.submit {
   color: #f5c70f;
   border: 1px solid #f5c70f;
 }
+body input.submit:hover {
+  color: #987b06;
+  border-color: #987b06;
+}
 
 .img-left {
   float: left;

@@ -7,6 +7,7 @@ $contentBackground: null !default;
     float: $float;
     margin: $top $right $bottom $left;
 }
+$hover: darken($button, 20%);
 
 body {
     background-color: $pageBackground;
@@ -80,6 +81,10 @@ body {
         background-color: $contentBackgroud;
         color: $button;
         border: 1px solid $button;
+        &:hover {
+            color: $hover;
+            border-color: $hover;
+        }
     }    
 }
 .img-left {
