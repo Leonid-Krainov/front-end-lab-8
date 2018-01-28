@@ -1,0 +1,107 @@
+body {
+  background-color: rgba(198, 238, 252, 0.53);
+  color: #ffffff;
+}
+body #content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #3b3b3b;
+}
+body #content .brief {
+  background-color: #fff178;
+}
+body #content table {
+  border-collapse: collapse;
+}
+body #content table caption {
+  text-align: end;
+}
+body #content table th {
+  background-color: #94a34e;
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 10px 15px;
+}
+body #content table th:nth-child(-n+2) {
+  border-right: 1px solid white;
+}
+body #content table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #94a34e;
+}
+body h1, body h2 {
+  color: #fccd10;
+}
+body h1 {
+  text-align: center;
+}
+body img {
+  padding: 2px;
+  border: 2px solid #fccd10;
+}
+body form {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+body form label {
+  color: #fccd10;
+}
+body form input, body form textarea {
+  padding: 5px;
+  margin: 5px 0px;
+}
+body .userName {
+  display: flex;
+  flex-direction: row;
+}
+body .userName form {
+  flex-grow: 1;
+}
+body .userName form:first-child {
+  padding-right: 10px;
+}
+body input.submit {
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #3b3b3b;
+  color: #f5c70f;
+  border: 1px solid #f5c70f;
+}
+
+.img-left {
+  float: left;
+  margin: 0px 20px 15px 0px;
+}
+
+.img-right {
+  float: right;
+  margin: 0px 0px 10px 20px;
+}
+
+body h1 {
+  text-transform: uppercase;
+}
+body .brief {
+  display: block;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+body a {
+  color: #f5c70f;
+}
+body table caption, body table th {
+  color: #000000;
+}
+body table td {
+  background-color: #677d01;
+}

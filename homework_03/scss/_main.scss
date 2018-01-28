@@ -1,0 +1,90 @@
+$contentBackground: null !default;
+@mixin flexBlock {
+    display: block;
+    display: flex;
+}
+@mixin imagePosition ($float, $top, $right, $bottom, $left ) {
+    float: $float;
+    margin: $top $right $bottom $left;
+}
+
+body {
+    background-color: $pageBackground;
+    color: $fontColor;
+    #content {
+        width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: $contentBackgroud; 
+        .brief {
+            background-color: $briefBackgound;
+        }
+        table {
+            border-collapse: collapse;
+            caption {
+                text-align: end;
+            }            
+            th {
+                background-color: $tableHeads;
+                text-align: start;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: normal;
+                padding: 10px 15px;
+                &:nth-child(-n+2) {
+                    border-right: 1px solid white;
+                }                
+            }
+            td {
+                padding: 10px 15px;
+                border-bottom: 1px solid $tableHeads;                
+            }
+        }       
+    }
+    h1, h2 {
+        color: $headerBorder;
+    }
+    h1 {
+        text-align: center;
+    }
+    img {
+        padding: 2px;
+        border: 2px solid $headerBorder;                
+    }
+    form {
+        @include flexBlock;        
+        flex-direction: column;
+        padding-bottom: 10px;
+        label {
+            color: $formColor;
+        }
+        input, textarea {
+            padding: 5px;
+            margin: 5px 0px;
+        }                      
+    }
+    .userName {
+        display: flex;
+        flex-direction: row;
+        form {
+            flex-grow: 1;
+            &:first-child {
+                padding-right: 10px;
+            }            
+        }        
+    }
+    input.submit {
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        background-color: $contentBackgroud;
+        color: $button;
+        border: 1px solid $button;
+    }    
+}
+.img-left {
+    @include imagePosition (left, 0px, 20px, 15px, 0px);    
+}
+.img-right {
+    @include imagePosition (right, 0px, 0px, 10px, 20px);    
+}

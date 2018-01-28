@@ -1,0 +1,27 @@
+@import "variables2";
+@import "main";
+
+body {
+    h1 {
+        text-transform: uppercase;
+    }
+    .brief {
+        @include flexBlock;
+        height: 60px;        
+        align-items: center;        
+        padding-left: 20px;
+        margin-bottom: 40px;
+        color: $fontBlack;
+    }
+    a {
+        color: $button;
+    }
+    table {
+        caption, th {
+            color: $fontBlack;
+        }
+        td {
+            background-color: $tableBackground;
+        }        
+    }
+}
