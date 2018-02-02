@@ -1,0 +1,231 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 95vh;
+  background-image: url(../img/apples.jpg);
+  background-size: cover;
+  color: #E8E8E8;
+}
+header nav {
+  padding: 1% 15% 1% 15%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav .links {
+  display: inline-flex;
+  list-style-type: none;
+}
+header nav .links li {
+  padding-left: 3vw;
+}
+header nav .links li a {
+  color: #E8E8E8;
+  text-decoration: none;
+}
+header nav .links li a:hover {
+  border-bottom: #B7C8D9 solid 0.5vh;
+}
+header h1 {
+  text-align: center;
+  margin-top: 30vh;
+  font-size: 6vh;
+  line-height: 2vh;
+  font-weight: normal;  
+}
+header h1 span{  
+  font-size: 10vh;
+}
+header h5 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 2vh;
+}
+header input {
+  margin-top: 18vh;
+  margin-left: 42vw;
+  width: 15vw;
+  height: 8vh;
+  color: #FFF;
+  background-color: rgba(52, 54, 56, 0.5);
+}
+header input:hover {
+  background-color: #343638;
+}
+
+main div.lorem {
+  padding: 1% 15% 1% 15%;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 40% 55%;
+  grid-gap: 5%;
+  align-items: center;
+}
+main div.lorem .bigFont {
+  font-size: 3vh;
+}
+main div.lorem .smallFont {
+  font-size: 2.5vh;
+}
+main section.articles {
+  background-color: #F3F3F3;
+  height: 155vh;
+  padding: 1% 15% 1% 15%;
+}
+main section.articles h2 {
+  padding-top: 15vh;
+  margin-bottom: 10vh;
+  font-size: 3vh;
+  font-weight: normal;
+  text-align: center;
+}
+main section.articles .images {
+  height: 65vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50% 50%;
+  grid-gap: 2em;
+  padding-bottom: 10vh;
+}
+main section.articles .images div {
+  border: #FFF solid 0.1em;
+}
+main section.articles .images div p {
+  color: #FFF;
+  font-size: 2.5vh;
+  position: absolute;
+  margin-top: 21vh;
+  margin-left: 1vw;
+}
+main section.articles .images div input {
+  color: #FFF;
+  font-size: 2.5vh;
+  background-color: #343638;
+  border: #FFF solid 0.1em;
+  height: 5vh;
+  width: 5vw;
+}
+main section.articles .images .southFrance {
+  grid-column: 1 / 3;
+  background-image: url(../img/sample.jpg);
+  background-size: cover;
+}
+main section.articles .images .southFrance input {
+  position: relative;
+  margin-top: 2%;
+  margin-left: 86%;
+}
+main section.articles .images .budapest {
+  background-image: url(../img/sample2.jpg);
+  background-size: cover;
+}
+main section.articles .images .budapest input {
+  position: relative;
+  margin-top: 4%;
+  margin-left: 70%;
+}
+main section.articles .images .southAmerica {
+  grid-column: 2 / 4;
+  background-image: url(../img/sample3.jpg);
+  background-size: cover;
+}
+main section.articles .images .southAmerica input {
+  position: relative;
+  margin-top: 2%;
+  margin-left: 86%;
+}
+main section.articles .subscribe {
+  margin-top: 7vh;
+  background-color: #FFF;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main section.articles .subscribe p {
+  font-size: 3.5vh;
+  align-self: center;
+}
+main section.articles .subscribe form {
+  margin-left: 4vw;
+  align-self: center;
+}
+main section.articles .subscribe form input.email {
+  font-size: 2vh;
+  height: 6vh;
+  padding: 0px;
+  width: 20vw;
+  background-color: #F0F0F0;
+  border: #343638 solid 0.1em;
+  padding-left: 2vw;
+  float: left;
+}
+main section.articles .subscribe form button.submit {
+  font-size: 2vh;
+  height: 6.4vh;
+  padding: 0px;
+  width: 15vw;
+  color: #FFF;
+  background-color: #343638;
+  border: none;
+}
+
+footer {
+  padding: 1% 15% 1% 15%;
+  color: #9E9E9E;
+}
+footer .content {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 30%;
+  grid-gap: 5%;
+  margin: 10vh 0vh;
+}
+footer .content div {
+  font-size: 2vh;
+}
+footer .content div h3 {
+  color: #000;
+}
+footer .content div.newsletter form input.email {
+  font-size: 2vh;
+  height: 5vh;
+  padding: 0px;
+  width: 10vw;
+  background-color: #F0F0F0;
+  border: #343638 solid 0.1em;
+  padding-left: 2vw;
+  float: left;
+}
+footer .content div.newsletter form button.submit {
+  font-size: 2vh;
+  height: 5.4vh;
+  padding: 0px;
+  width: 5vw;
+  color: #FFF;
+  background-color: #343638;
+  border: none;
+}
+footer .copyright {
+  font-size: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .copyright .links {
+  display: inline-flex;
+  list-style-type: none;
+}
+footer .copyright .links li {
+  padding-left: 3vw;
+}
+footer .copyright .links li a {
+  color: #000;
+  text-decoration: none;
+}
+footer .copyright .links li a:hover {
+  border-bottom: #B7C8D9 solid 0.5vh;
+}
