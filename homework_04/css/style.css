@@ -144,11 +144,11 @@ main section.articles .subscribe {
   background-color: #FFF;
   height: 25vh;
   display: grid;
-  grid-template-columns: 30% 69%;
+  grid-template-columns: 35% 64%;
   grid-gap: 1%;
 }
 main section.articles .subscribe p {
-  font-size: 3.5vh;
+  font-size: 3vh;
   align-self: center;
 }
 main section.articles .subscribe form {
