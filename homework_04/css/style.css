@@ -139,12 +139,13 @@ main section.articles .images .southAmerica input {
   margin-left: 86%;
 }
 main section.articles .subscribe {
+  padding: 0 7%;
   margin-top: 7vh;
   background-color: #FFF;
   height: 25vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 30% 69%;
+  grid-gap: 1%;
 }
 main section.articles .subscribe p {
   font-size: 3.5vh;
@@ -168,7 +169,7 @@ main section.articles .subscribe form button.submit {
   font-size: 2vh;
   height: 6.4vh;
   padding: 0px;
-  width: 15vw;
+  width: 10vw;
   color: #FFF;
   background-color: #343638;
   border: none;
