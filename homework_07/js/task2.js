@@ -11,7 +11,7 @@ while (confirm("Do you want to play a game?")) {
         var userNumber = prompt("Enter a number from " + min + " to " + max + "\n" +
         "Attempts left: " + i + "\nTotal prize: " + win + "$ \n" +
         "Possible prize on current attempt: " + bank + "$");
-        if (userNumber == number && userNumber === "") {
+        if (userNumber == number && userNumber !== "") {
             win = win+bank;
             var choice = confirm("Your prize is " + win + "$. Do you want to continue the game?");
             if (choice == true) {
