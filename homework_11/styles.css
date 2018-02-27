@@ -1,0 +1,19 @@
+/* Your styles goes here */
+
+i {
+  float: left;
+  color: orange;
+}
+
+ol {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+li {
+  display: block;
+  padding: 5px;
+}
