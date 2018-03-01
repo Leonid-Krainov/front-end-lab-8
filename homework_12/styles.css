@@ -1,0 +1,51 @@
+/* Your styles goes here */
+
+body {
+    background-color: #1C1C1F;
+}
+
+h2 {
+    color: #A19E86;
+}
+
+h4 {
+    color: #D7D2B7;
+}
+
+h4.bold {
+    color: #A19E86;
+    font-weight: bold;
+    float: left;
+    margin: 0 2%;
+}
+
+.tanks {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2%;
+}
+
+.tank_I {
+    width: 100%;
+}
+
+.main_img {
+    float: left;
+}
+
+.tank_N {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tank_D:hover {
+    background: #2C2C2C;
+}
+.div_T {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.detail_Div {
+    color: #A19E86;
+}
