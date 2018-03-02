@@ -22,7 +22,7 @@ h4.bold {
 .tanks {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 2%;
+    grid-gap: 10px;
 }
 
 .tank_I {
@@ -34,18 +34,60 @@ h4.bold {
 }
 
 .tank_N {
+    text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .tank_D:hover {
     background: #2C2C2C;
 }
+
 .div_T {
-    display: flex;    
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .detail_Div {
     color: #A19E86;
+}
+
+.div_Head {
+    display: flex;
+    align-content: center;
+}
+
+.div_Head img.main_img {
+    align-self: center;
+    width: 40px;
+}
+
+h4.tank_N {
+    font-size: 20px;
+    color: #A19E86;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+div.div_Cont {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-size: 20px;
+}
+
+.table {
+    width: 95%;
+    color: #D7D2B7;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #D7D2B7;
+    padding: 5px;
+}
+
+a.back {
+    text-decoration: none;
 }
